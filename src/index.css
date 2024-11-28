@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Inter', system-ui, sans-serif;
+  font-feature-settings: "cv05" 1,'cv08' 1, 'cv10' 1,'ss01' 1, 'ss08' 1;
+  -webkit-font-smoothing: antialiased;
+  font-display: swap;
+}
+
+.text-heading-2xl {
+  letter-spacing: -.025em;
+  line-height: 1.1;
+}
+
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem; /* Adjust spacing between items */
+}
+
+.no-pointer {
+  pointer-events: none;
+}
+
+h1,h2,p {
+  pointer-events: none;
+}
+
+ ::selection {
+  background-color: #ff875b7f; /* Yellow color */
+  color: #000; /* Text color */
+}
+
+
