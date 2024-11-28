@@ -1,17 +1,17 @@
 import Card from "../../components/base/Card";
 
-import Art from "../../assets/art.webp";
-import TBS from "../../assets/bs.webp";
-import EMS from "../../assets/ems.webp";
-import TBSM from "../../assets/TBS.webp";
-import SM from "../../assets/SM.webp";
-import CB from "../../assets/cb.webp";
-import TB from "../../assets/tb.webp";
-import FL from "../../assets/fl.webp";
-import HM from "../../assets/hm.webp";
-import MP from "../../assets/mp.webp";
-import DT from "../../assets/dt.webp";
-import TM from "../../assets/tm.webp";
+import Art from "@assets/art.webp";
+import TBS from "@assets/bs.webp";
+import EMS from "@assets/ems.webp";
+import TBSM from "@assets/TBS.webp";
+import SM from "@assets/SM.webp";
+import CB from "@assets/cb.webp";
+import TB from "@assets/tb.webp";
+import FL from "@assets/fl.webp";
+import HM from "@assets/hm.webp";
+import MP from "@assets/mp.webp";
+import DT from "@assets/dt.webp";
+import TM from "@assets/tm.webp";
 
 const Masonry = ({ ...props }) => {
   const cards = [
