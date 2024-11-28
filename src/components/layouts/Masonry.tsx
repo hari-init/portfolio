@@ -1,6 +1,6 @@
 import Card from "../../components/base/Card";
 
-import Art from "/@assets/art.webp";
+import Art from "@assets/art.webp";
 import TBS from "@assets/bs.webp";
 import EMS from "@assets/ems.webp";
 import TBSM from "@assets/TBS.webp";
