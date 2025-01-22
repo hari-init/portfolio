@@ -1,4 +1,4 @@
-import { Dots, Header, Hero, About, Projects, Footer } from "./components";
+import { Header, Hero, About, Projects, Footer } from "./components";
 
 function App() {
   return (
