@@ -3,8 +3,8 @@ import { skills } from "../../assets/skills";
 
 const About = () => {
   const skillStyle = {
-    background:
-      "linear-gradient(to right, white, transparent 20%, transparent 80%, white)",
+    // background:
+    //   "linear-gradient(to right, white, transparent 20%, transparent 80%, white)",
   };
   const experiences = [
     {
