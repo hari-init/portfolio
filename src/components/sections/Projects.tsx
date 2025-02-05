@@ -1,9 +1,10 @@
 import { Section, Masonry } from "../../components";
-import { useState } from "react";
+// import { useState } from "react";
 // import { Icon } from "@iconify-icon/react";
 
 const Projects = () => {
-  const [showMore, setShowMore] = useState(true);
+  // const [showMore, setShowMore] = useState(true);
+  const showMore = true;
 
   // const featured = [
   //   {
