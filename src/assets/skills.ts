@@ -24,6 +24,12 @@ export const skills = [
     style: "bg-[#B3E5FC] border-[#B3E5FC]",
   },
   {
+    name: "Python - Django",
+    years: "2",
+    main: true,
+    style: "bg-[#50afff] border-[#50afff]",
+  },
+  {
     name: "Angular",
     years: "2",
     main: false,

@@ -4,6 +4,7 @@ function App() {
   return (
     <>
       {/* <Dots /> */}
+      <div className="dots"></div>
       <Header />
       <Hero />
       <About />

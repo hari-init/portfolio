@@ -12,9 +12,29 @@ import HM from "@assets/hm.webp";
 import MP from "@assets/mp.webp";
 import DT from "@assets/dt.webp";
 import TM from "@assets/tm.webp";
+import RM from "@assets/RM.webp";
+import Dash from "@assets/Dash.webp";
+import Habit from "@assets/habit.webp";
+import Connections from "@assets/connections.png";
 
 const Masonry = ({ ...props }) => {
   const cards = [
+    {
+      projectName: "Habit Tracker",
+      projectDesc:
+        "The Habit Tracker is a simple and intuitive application designed to help users create, manage, and track their habits. Whether it's building new habits or breaking old ones, this tool empowers users to monitor their progress and stay consistent.",
+      projectImg: Habit,
+      projectBuiltWith: ["React", "Node", "Firebase"],
+      projectUrl: "https://habit-tracker-1-3rpy.onrender.com/",
+    },
+    {
+      projectName: "Connections",
+      projectDesc:
+        "A React-based application that provides an intuitive UI for creating and managing connections between various elements (nodes). The application allows users to connect different types of boxes, such as Input, Output, JSON, Gmail, etc., and visualize the flow of data between them.",
+      projectImg: Connections,
+      projectBuiltWith: ["React", "Node", "React-flow", "MongoDB"],
+      projectUrl: "https://hari-init.github.io/RF/",
+    },
     {
       projectName: "The Art",
       projectDesc:
@@ -30,6 +50,21 @@ const Masonry = ({ ...props }) => {
       projectImg: CB,
       projectBuiltWith: ["HTML", "CSS"],
       projectUrl: "https://hari-init.github.io/COB/",
+    },
+    {
+      projectName: "DashBoard [Template]",
+      projectDesc:
+        "React dashboard template with Chart JS and Sample REST data",
+      projectImg: Dash,
+      projectBuiltWith: ["React", "RESTFull", "TypeScript", "ChartJS"],
+      projectUrl: "https://hari-init.github.io/coalition/",
+    },
+    {
+      projectName: "Rick & Morty - GraphQL Practice",
+      projectDesc: "A sample GraphQL Integration with Vue",
+      projectImg: RM,
+      projectBuiltWith: ["Vue", "GraphQL", "TypeScript"],
+      projectUrl: "https://hari-init.github.io/rick-morty/",
     },
     {
       projectName: "The Bean Store",

@@ -30,7 +30,7 @@ const Hero = () => {
               LinkedIn<span className="text-[#FF885B]">.</span>
             </a>
             <a
-              href="https://drive.google.com/file/d/1rtiNJv39HMUYNdOsy8cG60uziTRinD-q/view"
+              href="https://drive.google.com/file/d/1yt9Iqq-LDPDWqYTyPA1W5Hsv2v4HC-qf/view?usp=sharing"
               target="_"
               className="text-black text-lg hover:text-[#FF885B] pointer-events-auto font-medium animate-moveIn500 border-b cursor-pointer border-[#FF885B] opacity-0"
             >

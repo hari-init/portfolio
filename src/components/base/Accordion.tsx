@@ -5,6 +5,7 @@ const Accordion = ({
   topLeftDetail,
   topLeftSubTitle,
   topRightTitle,
+  topRightTitleMob,
   descriptions,
   descriptionTitle,
   isAcc,
@@ -36,9 +37,13 @@ const Accordion = ({
             <p className="text-gray-700/80">{topLeftSubTitle}</p>
           </div>
           <div className="flex flex-col items-end">
-            <span className="text-gray-700/80">
+            <span className="text-gray-700/80 hidden lg:block">
               {" "}
               {topRightTitle ? topRightTitle : ""}
+            </span>
+            <span className="text-gray-700/80 block lg:hidden">
+              {" "}
+              {topRightTitleMob ? topRightTitleMob : ""}
             </span>
             <span className="font-medium cursor-pointer">
               {" "}
@@ -71,7 +76,17 @@ const Accordion = ({
                 ? "Show Less"
                 : "Show More")}
           </span> */}
-          {selectedAcc === topLeftTitle && isOpen && (
+          {isAcc && selectedAcc === topLeftTitle && isOpen && (
+            <>
+              <h2 className="mt-2 font-medium">{descriptionTitle}</h2>
+              <ul>
+                {descriptions.map((desc) => (
+                  <li key={desc}>- {desc}</li>
+                ))}
+              </ul>
+            </>
+          )}
+          {!isAcc && (
             <>
               <h2 className="mt-2 font-medium">{descriptionTitle}</h2>
               <ul>
@@ -93,6 +108,7 @@ type AccordionProps = {
   topLeftDetail: string;
   topLeftSubTitle: string;
   topRightTitle: string;
+  topRightTitleMob: string;
   descriptions: Array<string>;
   descriptionTitle: string;
   isAcc: boolean;

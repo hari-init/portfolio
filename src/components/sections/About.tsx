@@ -9,23 +9,40 @@ const About = () => {
   const experiences = [
     {
       isAcc: true,
-      topLeftTitle: "Exclusive Resorts",
-      topLeftSubTitle: "Front End Developer",
-      topLeftDetail: "Remote",
-      topRightTitle: "2023 - 04/2024",
+      topLeftTitle: "Foodbia,",
+      topLeftSubTitle: "Shopify Developer",
+      topLeftDetail: "Remote [Volunteering]",
+      topRightTitle: "Present",
+      topRightTitleMob: "Present",
       descriptionTitle: "Public Website",
       descriptions: [
-        "Developed features with Vue 3 and Nuxt 3, and migrated from Vue 2 for better performance.",
-        "Integrated Prismic, AWS, and Cloudinary.",
-        "Created custom components and optimized performance.",
+        "Keeping the Shopify store functional by making occasional updates and fixes.",
+        "Editing product pages, collections, and other site content.",
+        "Updating metadata and improving site structure for better search rankings.",
       ],
     },
     {
       isAcc: true,
-      topLeftTitle: "Habitat28, Canada",
-      topLeftSubTitle: "WordPress Developer",
+      topLeftTitle: "Exclusive Resorts,",
+      topLeftSubTitle: "Senior Software Engineer",
       topLeftDetail: "Remote",
-      topRightTitle: "2024 - 04/2024",
+      topRightTitle: "12/2023 - 04/2024",
+      topRightTitleMob: "12/23 - 04/24",
+      descriptionTitle: "Public Website",
+      descriptions: [
+        "Developed high-performance front-end solutions, leading component library development for UI consistency.",
+        "Built and maintained a Vue-based Design System (Vue 3 & Nuxt 3) to standardize UI components.",
+        "Transitioned legacy CMS to Prismic, improving content delivery speed by 40%.",
+        "Replaced Webpack with Vite, cutting build times by 50%.",
+      ],
+    },
+    {
+      isAcc: true,
+      topLeftTitle: "Habitat28,",
+      topLeftSubTitle: "WordPress Developer",
+      topLeftDetail: "Canada [Volunteering]",
+      topRightTitle: "04/2024 - 05/2024",
+      topRightTitleMob: "04/24 - 05/24",
       descriptionTitle: "Public Website",
       descriptions: [
         "Customized WordPress themes and plugins, and managed content for dynamic updates.",
@@ -35,62 +52,69 @@ const About = () => {
     },
     {
       isAcc: true,
-      topLeftTitle: "Intellect Design Arena",
+      topLeftTitle: "Intellect Design Arena,",
       topLeftSubTitle: "Associate Consultant",
       topLeftDetail: "India",
-      topRightTitle: "2021 - 2023",
+      topRightTitle: "12/2021 - 08/2023",
+      topRightTitleMob: "12/21 - 08/23",
       descriptionTitle: "iSherlock and iESG | Due Diligence",
       descriptions: [
-        "Led product design and development with Vue.js, Bulma CSS, and Node.js.",
-        "Spearheaded R&D initiatives to enhance quality and user experience.",
-        "Built with Angular, OAuth 2.0, Vue.js, TypeScript, Pinia, Vite, and Testing Library.",
+        "Led internal app development, creating reusable Vue + TypeScript components for enterprise applications.",
+        "Developed and maintained a Vue-based Component Library, ensuring UI consistency and faster development.",
+        "Built Vue PoCs to replace legacy systems, improving app performance by 25%.",
+        "Contributed to Django-based backend services, enhancing full-stack development capabilities.",
       ],
     },
     {
       isAcc: true,
-      topLeftTitle: "Photon interactive",
+      topLeftTitle: "Photon interactive,",
       topLeftSubTitle: "Software Engineer",
       topLeftDetail: "India",
-      topRightTitle: "2021",
+      topRightTitle: "02/2021 - 12/2021",
+      topRightTitleMob: "02/21 - 12/21",
       descriptionTitle: "Public Website",
       descriptions: [
-        "Managed a small team, fostering collaboration.",
-        "Developed features with Vue.js and Nuxt.js; built responsive layouts with PWA and ADA compliance.",
-        "Leveraged Node.js for scalability and performance.",
+        "Developed a WCAG-compliant React/Next.js eCommerce platform with GDPR compliance.",
+        "Created interactive product manuals using React and Prismic, increasing user engagement by 20%.",
+        "Integrated CMS and Cloudinary, reducing image load times by 40%.",
+        "Achieved 90%+ test coverage with Jest and Testing Library for robust code quality.",
       ],
     },
     {
       isAcc: true,
-      topLeftTitle: "EMD systems",
+      topLeftTitle: "EMD systems,",
       topLeftSubTitle: "Software Engineer",
       topLeftDetail: "India",
-      topRightTitle: "2018 - 2021",
+      topRightTitle: "06/2018 - 02/2021",
+      topRightTitleMob: "06/18 - 02/21",
       descriptionTitle: "MMS & GIP | DICOM viewer",
       descriptions: [
-        "Skilled in React.js.",
-        "Utilize Node.js for scalability and best practices.",
-        "Experienced with Angular and Vue.js.",
+        "Developed DICOM viewer features, improving radiology workflows by 15%.",
+        "Built image manipulation tools using Vue/React/Angular, reducing manual adjustments by 30%.",
+        "Delivered RIS/PACS applications with optimized rendering and state management.",
       ],
     },
   ];
   const education = [
     {
       isAcc: false,
-      topLeftTitle: "Conestoga",
-      topLeftSubTitle: "Web development",
-      topLeftDetail: "Canada",
+      topLeftTitle: "PG in Web Development",
+      topLeftSubTitle: "Conestoga, Canada",
+      topLeftDetail: "",
       topRightTitle: "05/2023 - 12/2024",
+      topRightTitleMob: "05/23 - 12/24",
       descriptionTitle: "",
-      descriptions: [],
+      descriptions: ["GPA: 3.64 | Dean's Honour List"],
     },
     {
       isAcc: false,
-      topLeftTitle: "Pondicherry University",
-      topLeftSubTitle: "ECE",
-      topLeftDetail: "Canada",
+      topLeftTitle: "Bachelors in ECE,",
+      topLeftSubTitle: "Pondicherry University, India",
+      topLeftDetail: "",
       topRightTitle: "2014 - 2018",
+      topRightTitleMob: "2014 - 2018",
       descriptionTitle: "",
-      descriptions: [],
+      descriptions: ["GPA: 7.5 | Distinction"],
     },
   ];
   return (
@@ -109,6 +133,7 @@ const About = () => {
               topLeftSubTitle={exp.topLeftSubTitle}
               topLeftDetail={exp.topLeftDetail}
               topRightTitle={exp.topRightTitle}
+              topRightTitleMob={exp.topRightTitleMob}
               descriptionTitle={exp.descriptionTitle}
               descriptions={exp.descriptions}
             />
@@ -154,6 +179,7 @@ const About = () => {
               topLeftSubTitle={exp.topLeftSubTitle}
               topLeftDetail={exp.topLeftDetail}
               topRightTitle={exp.topRightTitle}
+              topRightTitleMob={exp.topRightTitleMob}
               descriptionTitle={exp.descriptionTitle}
               descriptions={exp.descriptions}
             />

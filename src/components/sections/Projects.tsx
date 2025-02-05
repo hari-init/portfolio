@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Icon } from "@iconify-icon/react";
 
 const Projects = () => {
-  const [showMore, setShowMore] = useState(false);
+  const [showMore, setShowMore] = useState(true);
 
   const featured = [
     {
@@ -40,7 +40,7 @@ const Projects = () => {
         {!showMore && (
           <div className="absolute bg-gradient-to-t from-white to-transparent pointer-events-none bottom-0 w-full h-4/5"></div>
         )}
-        <div className="flex-col w-[95%] md:w-3/5 m-auto flex md:flex-row justify-between mt-10 mb-5 md:mt-20 md:mb-10">
+        {/* <div className="flex-col w-[95%] md:w-3/5 m-auto flex md:flex-row justify-between mt-10 mb-5 md:mt-20 md:mb-10">
           {featured.map((feature) => (
             <FeatureCard
               key={feature.name}
@@ -52,8 +52,8 @@ const Projects = () => {
               git={feature.git}
             />
           ))}
-        </div>
-        <div
+        </div> */}
+        {/* <div
           className="text-center text-black font-bold cursor-pointer"
           onClick={handleClick}
         >
@@ -72,7 +72,7 @@ const Projects = () => {
               height="1.5rem"
             />
           )}
-        </div>
+        </div> */}
         <Masonry />
       </main>
     </Section>

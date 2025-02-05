@@ -17,10 +17,15 @@ body {
   font-feature-settings: "cv05" 1, 'cv08' 1, 'cv10' 1, 'ss01' 1, 'ss08' 1;
   -webkit-font-smoothing: antialiased;
   font-display: swap;
-  height: 16rem;
+}
+
+.dots {
   background-image: radial-gradient(circle, rgb(162 162 162) 0.4px, #fff 1px);
   background-size: 2.5rem 2.5rem;
   background-position: center center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
 }
 
 .text-heading-2xl {
