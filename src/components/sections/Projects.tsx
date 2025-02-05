@@ -1,31 +1,31 @@
-import { Section, Masonry, FeatureCard } from "../../components";
+import { Section, Masonry } from "../../components";
 import { useState } from "react";
-import { Icon } from "@iconify-icon/react";
+// import { Icon } from "@iconify-icon/react";
 
 const Projects = () => {
   const [showMore, setShowMore] = useState(true);
 
-  const featured = [
-    {
-      styles: "w-full md:w-1/2 md:mx-2 p-2 my-2 border",
-      name: "HabitTracker",
-      status: "WIP",
-      stack: "MERN",
-      desc: "App that helps to track you habit and complete it",
-      git: "https://github.com/hari-init/habit-tracker",
-    },
-    {
-      styles: "w-full md:w-1/2 md:mx-2 p-2 my-2 border",
-      name: "hrvi.tech",
-      status: "WIP",
-      stack: "React",
-      desc: "Personal portfolio",
-      git: "",
-    },
-  ];
-  const handleClick = () => {
-    setShowMore((prev) => !prev);
-  };
+  // const featured = [
+  //   {
+  //     styles: "w-full md:w-1/2 md:mx-2 p-2 my-2 border",
+  //     name: "HabitTracker",
+  //     status: "WIP",
+  //     stack: "MERN",
+  //     desc: "App that helps to track you habit and complete it",
+  //     git: "https://github.com/hari-init/habit-tracker",
+  //   },
+  //   {
+  //     styles: "w-full md:w-1/2 md:mx-2 p-2 my-2 border",
+  //     name: "hrvi.tech",
+  //     status: "WIP",
+  //     stack: "React",
+  //     desc: "Personal portfolio",
+  //     git: "",
+  //   },
+  // ];
+  // const handleClick = () => {
+  //   setShowMore((prev) => !prev);
+  // };
   return (
     <Section
       name="Projects"
