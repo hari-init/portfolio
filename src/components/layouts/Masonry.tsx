@@ -16,6 +16,7 @@ import RM from "@assets/RM.webp";
 import Dash from "@assets/Dash.webp";
 import Habit from "@assets/habit.webp";
 import Connections from "@assets/connections.png";
+import cock from "@assets/cock.png";
 
 const Masonry = ({ ...props }) => {
   const cards = [
@@ -44,12 +45,12 @@ const Masonry = ({ ...props }) => {
       projectUrl: "https://the-art.vercel.app/",
     },
     {
-      projectName: "City of Brantford",
+      projectName: "Cocktail Picker - Try it 🎉",
       projectDesc:
-        "Welcome to Explore Brantford, my personal project dedicated to showcasing the city's best food, attractions, and more! Explore Brantford's diverse offerings and uncover its hidden gems with us.",
-      projectImg: CB,
-      projectBuiltWith: ["HTML", "CSS"],
-      projectUrl: "https://hari-init.github.io/COB/",
+        "Based on our mood it matches cocktail's category and gives the random pick.",
+      projectImg: cock,
+      projectBuiltWith: ["Vue", "Public API"],
+      projectUrl: "https://hari-init.github.io/cocktail/#/",
     },
     {
       projectName: "DashBoard [Template]",
@@ -65,6 +66,14 @@ const Masonry = ({ ...props }) => {
       projectImg: RM,
       projectBuiltWith: ["Vue", "GraphQL", "TypeScript"],
       projectUrl: "https://hari-init.github.io/rick-morty/",
+    },
+    {
+      projectName: "City of Brantford",
+      projectDesc:
+        "Welcome to Explore Brantford, my personal project dedicated to showcasing the city's best food, attractions, and more! Explore Brantford's diverse offerings and uncover its hidden gems with us.",
+      projectImg: CB,
+      projectBuiltWith: ["HTML", "CSS"],
+      projectUrl: "https://hari-init.github.io/COB/",
     },
     {
       projectName: "The Bean Store",
