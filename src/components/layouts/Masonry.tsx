@@ -17,16 +17,17 @@ import Dash from "@assets/Dash.webp";
 import Habit from "@assets/habit.webp";
 import Connections from "@assets/connections.png";
 import cock from "@assets/cock.png";
+import ER from "@assets/ER.png";
+import MK from "@assets/MK.png";
 
 const Masonry = ({ ...props }) => {
   const cards = [
     {
-      projectName: "Habit Tracker",
-      projectDesc:
-        "The Habit Tracker is a simple and intuitive application designed to help users create, manage, and track their habits. Whether it's building new habits or breaking old ones, this tool empowers users to monitor their progress and stay consistent.",
-      projectImg: Habit,
-      projectBuiltWith: ["React", "Node", "Firebase"],
-      projectUrl: "https://habit-tracker-1-3rpy.onrender.com/",
+      projectName: "Public Site (ExclusiveResorts)",
+      projectDesc: "Developed a public website using Vue 3 and Nuxt 3",
+      projectImg: ER,
+      projectBuiltWith: ["Vue", "Nuxt", "AWS", "Prismic"],
+      projectUrl: "https://exclusiveresorts.com/",
     },
     {
       projectName: "Connections",
@@ -36,6 +37,24 @@ const Masonry = ({ ...props }) => {
       projectBuiltWith: ["React", "Node", "React-flow", "MongoDB"],
       projectUrl: "https://hari-init.github.io/RF/",
     },
+    {
+      projectName: "Public Site (MoleKule)",
+      projectDesc:
+        "Developed a complete E commerce (B2B, C2C) for the client MoleKule.",
+      projectImg: MK,
+      projectBuiltWith: ["Vue", "Nuxt", "AWS", "Jest"],
+      projectUrl: "https://molekule.com/",
+    },
+
+    {
+      projectName: "Habit Tracker",
+      projectDesc:
+        "The Habit Tracker is a simple and intuitive application designed to help users create, manage, and track their habits. Whether it's building new habits or breaking old ones, this tool empowers users to monitor their progress and stay consistent.",
+      projectImg: Habit,
+      projectBuiltWith: ["React", "Node", "Firebase"],
+      projectUrl: "https://habit-tracker-1-3rpy.onrender.com/",
+    },
+
     {
       projectName: "The Art",
       projectDesc:
@@ -178,7 +197,7 @@ const Masonry = ({ ...props }) => {
   });
 
   return (
-    <div className="flex w-full md:w-3/4 m-auto pt-5" {...props}>
+    <div className="flex w-full md:w-4/5 m-auto pt-5" {...props}>
       {columnCards.map((column: any, colIndex: any) => (
         <div
           key={Date.now() + colIndex}
