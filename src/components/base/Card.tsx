@@ -6,7 +6,7 @@ const Card = ({
   projectBuiltWith,
   imageStyle,
   projectUrl,
-}: CardProp) => {
+}: CardProps) => {
   const [showDetails, setShowDetails] = useState(false);
   const [selectedJob, setSelectedJob] = useState("");
 
@@ -64,13 +64,13 @@ const Card = ({
   );
 };
 
-type CardProp = {
+export interface CardProps {
   projectName: string;
   projectDesc: string;
   projectImg: string;
   projectBuiltWith: Array<string>;
-  imageStyle?: any;
+  imageStyle?: React.CSSProperties;
   projectUrl: string;
-};
+}
 
 export default Card;
