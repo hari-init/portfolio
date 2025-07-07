@@ -1,4 +1,4 @@
-const SubSection = ({ title, children }: SubSectionProps) => {
+const SubSection = ({ title, children }: SubSectionProps): JSX.Element => {
   return (
     <div className="w-full md:w-[60%] m-auto">
       <h1 className="mt-5 text-3xl font-semibold md:mt-10">{title}</h1>
@@ -9,6 +9,6 @@ const SubSection = ({ title, children }: SubSectionProps) => {
 
 type SubSectionProps = {
   title: string;
-  children?: any;
+  children?: React.ReactNode;
 };
 export default SubSection;

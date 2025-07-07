@@ -1,6 +1,6 @@
 import { HeroFooter } from "../../components";
 
-const Hero = () => {
+const Hero = (): JSX.Element => {
   return (
     <>
       <section className="px-5 md:px-10 w-full h-full flex items-center ">

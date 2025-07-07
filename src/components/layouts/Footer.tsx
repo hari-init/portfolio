@@ -1,7 +1,7 @@
 import { Section } from "../../components";
 // import { Icon } from "@iconify-icon/react";
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   //   const icons = ["ri:github-line", "ri:linkedin-line", "mdi:email-outline"];
   // const icons = ["Github", "LinkedIn", "Email"];
   return (

@@ -1,7 +1,7 @@
 import { Icon } from "@iconify-icon/react";
 import { Link } from "react-scroll";
 
-const HeroFooter = () => {
+const HeroFooter = (): JSX.Element => {
   // const icons = [
   //   { link: "https://github.com/hari-init", icon: "ri:github-line" },
   //   {

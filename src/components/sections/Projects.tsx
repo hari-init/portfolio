@@ -2,7 +2,7 @@ import { Section, Masonry } from "../../components";
 // import { useState } from "react";
 // import { Icon } from "@iconify-icon/react";
 
-const Projects = () => {
+const Projects = (): JSX.Element => {
   // const [showMore, setShowMore] = useState(true);
   const showMore = true;
 

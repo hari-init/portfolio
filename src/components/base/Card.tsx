@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 const Card = ({
   projectName,
   projectDesc,
@@ -6,15 +7,11 @@ const Card = ({
   projectBuiltWith,
   imageStyle,
   projectUrl,
-}: CardProp) => {
+}: CardProp): JSX.Element => {
   const [showDetails, setShowDetails] = useState(false);
-  const [selectedJob, setSelectedJob] = useState("");
 
-  const handleClick = (pn: any) => {
-    setSelectedJob(pn);
-    setShowDetails((prev) => {
-      return !prev;
-    });
+  const toggleDetails = () => {
+    setShowDetails((prev) => !prev);
   };
   return (
     <>
@@ -32,23 +29,18 @@ const Card = ({
             <img src={projectImg} alt={projectName} style={imageStyle} />
           </div>
           <div className="flex flex-col items-end mt-2">
-            <span
-              className="cursor-pointer"
-              onClick={() => handleClick(projectName)}
-            >
-              {showDetails && selectedJob === projectName
-                ? "Show Less"
-                : "Show More"}
+            <span className="cursor-pointer" onClick={toggleDetails}>
+              {showDetails ? "Show Less" : "Show More"}
             </span>
           </div>
-          {showDetails && selectedJob === projectName && (
+          {showDetails && (
             <div>
               <p className="text-gray-700/80">{projectDesc}</p>
 
               <p className="text-gray-700 mt-2">
                 Built With:
-                {projectBuiltWith.map((tech: any, index: any) => (
-                  <span key={index} className="text-gray-700/80">
+                {projectBuiltWith.map((tech, index) => (
+                  <span key={tech} className="text-gray-700/80">
                     {" "}
                     {tech}
                     {projectBuiltWith.length - 1 > index && ","}
@@ -69,7 +61,7 @@ type CardProp = {
   projectDesc: string;
   projectImg: string;
   projectBuiltWith: Array<string>;
-  imageStyle?: any;
+  imageStyle?: React.CSSProperties;
   projectUrl: string;
 };
 

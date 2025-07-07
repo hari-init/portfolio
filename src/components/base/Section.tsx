@@ -7,7 +7,7 @@ const Section = ({
   children,
   height,
   itemPos = "items-start",
-}: SectionProp) => {
+}: SectionProp): JSX.Element => {
   return (
     <Element
       name={name}
@@ -24,7 +24,7 @@ type SectionProp = {
   name: string;
   titleText: string;
   height: string;
-  children?: any;
+  children?: React.ReactNode;
   itemPos?: string;
 };
 
