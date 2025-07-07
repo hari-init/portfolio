@@ -122,7 +122,7 @@ const Masonry = ({ ...props }) => {
       projectDesc:
         "A concept for a coffee shop app that revolutionizes the coffee experience by enabling easy ordering and instant customer feedback integration.",
       projectImg: TBSM,
-      imageStyle: { width: "100%", height: "200px", objectFit: "contain" },
+      imageStyle: { width: "100%", height: "200px", objectFit: "contain" } as const,
       projectBuiltWith: ["Android", "Flutter"],
       projectUrl: "",
     },
