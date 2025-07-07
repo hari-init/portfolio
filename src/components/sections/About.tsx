@@ -1,7 +1,7 @@
 import { Section, SubSection, Accordion } from "../../components";
 import { skills } from "../../assets/skills";
 
-const About = () => {
+const About = (): JSX.Element => {
   const skillStyle = {
     // background:
     //   "linear-gradient(to right, white, transparent 20%, transparent 80%, white)",

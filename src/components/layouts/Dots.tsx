@@ -5,7 +5,7 @@ const SCALE = 200;
 const LENGTH = 10;
 const SPACING = 15;
 
-const Dots = () => {
+const Dots = (): JSX.Element => {
   const canvasRef = useRef(null);
   const [windowSize, setWindowSize] = useState({
     width: window.innerWidth,

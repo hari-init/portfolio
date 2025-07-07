@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 
-const Header = () => {
+const Header = (): JSX.Element => {
   const headerText = ["About", "Projects"];
   return (
     <header className="px-5 py-4 md:py-6 md:px-10 w-full flex justify-between absolute top-0 ">

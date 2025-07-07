@@ -1,4 +1,6 @@
+import { useMemo } from "react";
 import Card from "../../components/base/Card";
+import useScreenSize from "../../hooks/useScreenSize";
 
 import Art from "@assets/art.webp";
 import TBS from "@assets/bs.webp";
@@ -20,8 +22,7 @@ import cock from "@assets/cock.png";
 import ER from "@assets/ER.png";
 import MK from "@assets/MK.png";
 
-const Masonry = ({ ...props }) => {
-  const cards = [
+const cards = [
     {
       projectName: "Public Site (ExclusiveResorts)",
       projectDesc: "Developed a public website using Vue 3 and Nuxt 3",
@@ -182,31 +183,36 @@ const Masonry = ({ ...props }) => {
     },
   ];
 
-  // Calculate columns based on screen width
-  const getColumnCount = () => {
-    if (window.innerWidth < 768) return 1; // Mobile
-    if (window.innerWidth < 1024) return 2; // Tablet
-    return 3; // Desktop
-  };
+type CardData = (typeof cards)[number];
 
-  const columns = getColumnCount();
-  const columnCards: any = Array.from({ length: columns }, () => []);
+const Masonry = (props: React.HTMLAttributes<HTMLDivElement>): JSX.Element => {
+  const { width } = useScreenSize();
 
-  cards.forEach((card, index) => {
-    columnCards[index % columns].push(card);
-  });
+  const columns = useMemo(() => {
+    if (width < 768) return 1;
+    if (width < 1024) return 2;
+    return 3;
+  }, [width]);
+
+  const columnCards = useMemo(() => {
+    const colCards: CardData[][] = Array.from({ length: columns }, () => []);
+    cards.forEach((card, index) => {
+      colCards[index % columns].push(card);
+    });
+    return colCards;
+  }, [columns]);
 
   return (
     <div className="flex w-full md:w-4/5 m-auto pt-5" {...props}>
-      {columnCards.map((column: any, colIndex: any) => (
+      {columnCards.map((column, colIndex) => (
         <div
-          key={Date.now() + colIndex}
+          key={colIndex}
           className={`flex flex-col w-full border-gray-700/80 ${
-            colIndex === 2 ? "" : `${columns === 1 ? "" : "border-r"}`
+            colIndex === columns - 1 ? "" : columns === 1 ? "" : "border-r"
           }`}
         >
-          {column.map((card: any, index: any) => (
-            <div key={Date.now() + index}>
+          {column.map((card) => (
+            <div key={card.projectName}>
               <Card
                 projectName={card.projectName}
                 projectDesc={card.projectDesc}
