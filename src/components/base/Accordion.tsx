@@ -9,7 +9,7 @@ const Accordion = ({
   descriptions,
   descriptionTitle,
   isAcc,
-}: AccordionProps) => {
+}: AccordionProps): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedAcc, setSelectedAcc] = useState("");
 

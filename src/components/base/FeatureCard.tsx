@@ -5,7 +5,7 @@ const FeatureCard = ({
   stack,
   git,
   desc,
-}: FeatureCardProps) => {
+}: FeatureCardProps): JSX.Element => {
   return (
     <div
       className={`bg-white rounded-md shadow-lg z-10 hover:scale-105 ease-in-out duration-100 ${styles}`}
