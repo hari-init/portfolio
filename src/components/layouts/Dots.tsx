@@ -5,6 +5,16 @@ const SCALE = 200;
 const LENGTH = 10;
 const SPACING = 15;
 
+type Point = {
+  x: number;
+  y: number;
+  opacity: number;
+};
+
+type DrawArgs = {
+  circle: (x: number, y: number, diameter: number) => void;
+};
+
 const Dots = () => {
   const canvasRef = useRef(null);
   const [windowSize, setWindowSize] = useState({
@@ -13,8 +23,8 @@ const Dots = () => {
   });
   const [offsetY, setOffsetY] = useState(window.scrollY);
 
-  const existingPoints = useRef(new Set()).current;
-  const points = useRef<any[]>([]).current;
+  const existingPoints = useRef(new Set<string>()).current;
+  const points = useRef<Point[]>([]).current;
 
   const {
     mount,
@@ -59,7 +69,7 @@ const Dots = () => {
     addPoints();
   };
 
-  const draw = ({ circle }: any) => {
+  const draw = ({ circle }: DrawArgs) => {
     background("#ffffff");
     const t = Date.now() / 10000;
 
