@@ -1,4 +1,5 @@
 import Card from "../../components/base/Card";
+import type { CardProps } from "../../components/base/Card";
 
 import Art from "@assets/art.webp";
 import TBS from "@assets/bs.webp";
@@ -21,7 +22,7 @@ import ER from "@assets/ER.png";
 import MK from "@assets/MK.png";
 
 const Masonry = ({ ...props }) => {
-  const cards = [
+  const cards: CardProps[] = [
     {
       projectName: "Public Site (ExclusiveResorts)",
       projectDesc: "Developed a public website using Vue 3 and Nuxt 3",
