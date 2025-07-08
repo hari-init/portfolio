@@ -1,10 +1,9 @@
-import { Header, Hero, About, Projects, Footer } from "./components";
+import { Header, Hero, About, Projects, Footer, Dots } from "./components";
 
 function App() {
   return (
     <>
-      {/* <Dots /> */}
-      <div className="dots"></div>
+      <Dots />
       <Header />
       <Hero />
       <About />
