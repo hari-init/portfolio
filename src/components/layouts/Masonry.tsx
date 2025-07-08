@@ -199,24 +199,23 @@ const Masonry = ({ ...props }) => {
 
   return (
     <div className="flex w-full md:w-4/5 m-auto pt-5" {...props}>
-      {columnCards.map((column: any, colIndex: any) => (
+      {columnCards.map((column: any, colIndex: number) => (
         <div
-          key={Date.now() + colIndex}
+          key={colIndex}
           className={`flex flex-col w-full border-gray-700/80 ${
             colIndex === 2 ? "" : `${columns === 1 ? "" : "border-r"}`
           }`}
         >
-          {column.map((card: any, index: any) => (
-            <div key={Date.now() + index}>
-              <Card
-                projectName={card.projectName}
-                projectDesc={card.projectDesc}
-                projectImg={card.projectImg}
-                projectBuiltWith={card.projectBuiltWith}
-                imageStyle={card.imageStyle}
-                projectUrl={card.projectUrl}
-              />
-            </div>
+          {column.map((card: any, index: number) => (
+            <Card
+              key={`${card.projectName}-${index}`}
+              projectName={card.projectName}
+              projectDesc={card.projectDesc}
+              projectImg={card.projectImg}
+              projectBuiltWith={card.projectBuiltWith}
+              imageStyle={card.imageStyle}
+              projectUrl={card.projectUrl}
+            />
           ))}
         </div>
       ))}
