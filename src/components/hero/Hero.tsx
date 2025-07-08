@@ -6,7 +6,7 @@ const Hero = () => {
       <section className="px-5 md:px-10 w-full h-full flex items-center ">
         <main>
           <span className="flex gap-2 items-baseline animate-moveIn300 opacity-0 ">
-            <h1 className="text-heading-2xl font-semibold text-balance">
+            <h1 className="text-heading-2xl font-semibold text-balance text-gradient-animate">
               Hariharan Ravi
               <span className="text-[#FF885B] animate-blink">.</span>
             </h1>

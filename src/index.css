@@ -17,16 +17,11 @@ body {
   font-feature-settings: "cv05" 1, 'cv08' 1, 'cv10' 1, 'ss01' 1, 'ss08' 1;
   -webkit-font-smoothing: antialiased;
   font-display: swap;
+  background: linear-gradient(115deg, #1e3a8a, #9333ea, #e11d48, #f59e0b);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
 }
 
-.dots {
-  background-image: radial-gradient(circle, rgb(162 162 162) 0.4px, #fff 1px);
-  background-size: 2.5rem 2.5rem;
-  background-position: center center;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-}
 
 .text-heading-2xl {
   letter-spacing: -.025em;
@@ -55,4 +50,27 @@ p {
   /* Yellow color */
   color: #000;
   /* Text color */
+}
+.animated-gradient {
+  background: linear-gradient(115deg, #1e3a8a, #9333ea, #e11d48, #f59e0b);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+.text-gradient-animate {
+  background: linear-gradient(115deg, #4cc9f0, #7209b7, #f72585);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 8s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
